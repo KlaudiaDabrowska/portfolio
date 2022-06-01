@@ -32,16 +32,16 @@ const Home: NextPage = () => {
 
   return (
     <Container fluid>
-      <Row style={{ position: "relative" }}>
-        <Col
-          style={{
-            height: "100vh",
-            position: "fixed",
-            top: "25%",
-            left: "20%",
-          }}
-        >
-          <Stack gap={3}>
+      <div
+        className="card mb-3"
+        style={{
+          backgroundColor: "transparent",
+          border: "none",
+          marginTop: "6rem",
+        }}
+      >
+        <div className="row g-0">
+          <div className="col-sm-7 text-center d-flex flex-column justify-content-center">
             <div
               onMouseOver={handleMouseOverOne}
               onMouseOut={handleMouseOutOne}
@@ -78,24 +78,20 @@ const Home: NextPage = () => {
                 <div className="welcome-text">Klaudia</div>
               )}
             </div>
-          </Stack>
-        </Col>
-        <Col
-          style={{
-            height: "100vh",
-            position: "fixed",
-            top: "15%",
-            left: "65%",
-          }}
-        >
-          <Image
-            src="/img/me.png"
-            height={"700%"}
-            width={"500%"}
-            alt="me"
-          ></Image>
-        </Col>
-      </Row>
+          </div>
+          <div className="col-md-4">
+            <div className="card-body">
+              <Image
+                src="/img/me.png"
+                height={"700%"}
+                width={"500%"}
+                alt="me"
+                className="img-fluid rounded-start"
+              ></Image>
+            </div>
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };
