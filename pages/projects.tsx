@@ -50,16 +50,18 @@ const Projects: NextPage = () => {
             <div className="card">
               <div className="card-body project-card">
                 <h5 className="card-title text-center fw-bold fs-3 mb-5">
-                <a
+                  <a
                     href={"https://murmuring-dawn-23275.herokuapp.com/"}
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     Fitness App
                   </a>
                 </h5>
-                <p className="card-text text-center">
-                The application allows the user to create his own workout plan. The user can select exercises from the exercise list and can add the number of repetitions. Once he has made his workout plan, he can open it in modal and begin the adventure!
-                <br></br><br></br><br></br><br></br>
+                <p className="card-text text-center pb-5">
+                  The application allows the user to create his own workout
+                  plan. The user can select exercises from the exercise list and
+                  can add the number of repetitions. Once he has made his
+                  workout plan, he can open it in modal and begin the adventure!
                 </p>
                 <div className="text-center">
                   <Image
@@ -70,7 +72,7 @@ const Projects: NextPage = () => {
                   />
                 </div>
                 <p className="card-text text-center text-muted">
-                  Tech stack: Next.JS, Typescript, MUI 
+                  Tech stack: Next.JS, Typescript, MUI
                 </p>
               </div>
             </div>
